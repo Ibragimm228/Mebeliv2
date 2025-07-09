@@ -22,7 +22,6 @@ const ThreeDMarquee = ({
   images: string[];
   className?: string;
 }) => {
-  // На мобильных делаем 3 колонки вместо 4 для лучшего отображения
   const [isMobile, setIsMobile] = useState(false);
   
   useEffect(() => {
@@ -53,7 +52,6 @@ const ThreeDMarquee = ({
           }}
           className={cn(
             "grid gap-6 transform-3d",
-            // Динамически меняем количество колонок и scale
             isMobile ? "grid-cols-3 scale-90" : "grid-cols-4 scale-75",
             "sm:gap-8 sm:scale-100 lg:scale-110 xl:scale-125"
           )}
@@ -86,11 +84,10 @@ const ThreeDMarquee = ({
                     alt={`Image ${imageIndex + 1}`}
                     className={cn(
                       "aspect-[4/3] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl",
-                      // Увеличенные размеры для мобильных
-                      "w-72 h-54", // базовый размер для мобильных (было w-64 h-48)
-                      "sm:w-80 sm:h-60", // small screens (было sm:w-72 sm:h-54)  
-                      "lg:w-88 lg:h-66", // large screens (было lg:w-80 lg:h-60)
-                      "xl:w-96 xl:h-72" // extra large остается прежним
+                      "w-72 h-54",
+                      "sm:w-80 sm:h-60",
+                      "lg:w-88 lg:h-66",
+                      "xl:w-96 xl:h-72"
                     )}
                     width={384}
                     height={288}

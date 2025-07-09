@@ -52,7 +52,6 @@ export default function Header() {
     
     if (pathname !== "/") {
       router.push("/")
-      // Увеличиваем задержку и используем улучшенную функцию поиска элемента
       setTimeout(() => {
         scrollToElement(href)
       }, 500)
