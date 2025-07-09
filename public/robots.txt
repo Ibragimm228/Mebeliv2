@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Sitemap: https://mebelhik.ru/sitemap.xml
+
+# Allow all bots to index the site
+User-agent: Googlebot
+Allow: /
+User-agent: Yandexbot
+Allow: /
+User-agent: Mail.RU_Bot
+Allow: /
+
+# Разрешаем индексацию всех страниц
+Allow: /*.html
+Allow: /*.php
+Allow: /images/
+Allow: /bedroom/
+Allow: /living-room/
+Allow: /kitchen/
+Allow: /office/
+
+# Запрещаем индексацию служебных директорий
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*?*
+Disallow: /*? 

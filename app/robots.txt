@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mebelshik-tver.ru/sitemap.xml
+Host: https://mebelshik-tver.ru
